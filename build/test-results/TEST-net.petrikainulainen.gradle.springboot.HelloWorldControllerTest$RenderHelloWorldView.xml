@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.petrikainulainen.gradle.springboot.HelloWorldControllerTest$RenderHelloWorldView" tests="2" failures="0" errors="0" timestamp="2016-06-10T06:46:55" hostname="IBM013-PC09G577" time="1.059">
+  <properties/>
+  <testcase name="shouldReturnResponseStatusOk" classname="net.petrikainulainen.gradle.springboot.HelloWorldControllerTest$RenderHelloWorldView" time="1.029"/>
+  <testcase name="shouldRenderTheHelloWorldView" classname="net.petrikainulainen.gradle.springboot.HelloWorldControllerTest$RenderHelloWorldView" time="0.03"/>
+  <system-out><![CDATA[02:46:55.531 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+02:46:55.541 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+02:46:55.541 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+02:46:55.721 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String net.petrikainulainen.gradle.springboot.HelloWorldController.renderHelloWorldView()
+02:46:56.163 [Test worker] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+02:46:56.163 [Test worker] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+02:46:56.163 [Test worker] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+02:46:56.173 [Test worker] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+02:46:56.173 [Test worker] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy18
+02:46:56.183 [Test worker] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+02:46:56.193 [Test worker] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+02:46:56.253 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@1a8c238c
+02:46:56.313 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+02:46:56.323 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+02:46:56.323 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+02:46:56.333 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+02:46:56.333 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+02:46:56.333 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+02:46:56.333 [Test worker] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+02:46:56.333 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+02:46:56.333 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+02:46:56.333 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@6d0c145a]
+02:46:56.333 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@63003c64]
+02:46:56.333 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@326b5e13]
+02:46:56.333 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@156497fc]
+02:46:56.333 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+02:46:56.333 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+02:46:56.333 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+02:46:56.363 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/]
+02:46:56.373 [Test worker] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Looking up handler method for path /
+02:46:56.373 [Test worker] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Returning handler method [public java.lang.String net.petrikainulainen.gradle.springboot.HelloWorldController.renderHelloWorldView()]
+02:46:56.373 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/] is: -1
+02:46:56.393 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [index]] in DispatcherServlet with name ''
+02:46:56.393 [Test worker] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to resource [index] in InternalResourceView 'null'
+02:46:56.393 [Test worker] DEBUG o.s.mock.web.MockRequestDispatcher - MockRequestDispatcher: forwarding to [index]
+02:46:56.393 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+02:46:56.403 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+02:46:56.403 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+02:46:56.403 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+02:46:56.403 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String net.petrikainulainen.gradle.springboot.HelloWorldController.renderHelloWorldView()
+02:46:56.413 [Test worker] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+02:46:56.413 [Test worker] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+02:46:56.413 [Test worker] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy18
+02:46:56.413 [Test worker] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+02:46:56.423 [Test worker] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+02:46:56.423 [Test worker] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@743a373b
+02:46:56.423 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+02:46:56.423 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+02:46:56.423 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+02:46:56.423 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+02:46:56.423 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+02:46:56.423 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+02:46:56.423 [Test worker] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+02:46:56.423 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+02:46:56.423 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+02:46:56.423 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@164fdf6a]
+02:46:56.423 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@3edb585b]
+02:46:56.423 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@48732ad8]
+02:46:56.423 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@2876ee21]
+02:46:56.423 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+02:46:56.423 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+02:46:56.433 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+02:46:56.433 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/]
+02:46:56.433 [Test worker] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Looking up handler method for path /
+02:46:56.433 [Test worker] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Returning handler method [public java.lang.String net.petrikainulainen.gradle.springboot.HelloWorldController.renderHelloWorldView()]
+02:46:56.433 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/] is: -1
+02:46:56.433 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [index]] in DispatcherServlet with name ''
+02:46:56.433 [Test worker] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to resource [index] in InternalResourceView 'null'
+02:46:56.433 [Test worker] DEBUG o.s.mock.web.MockRequestDispatcher - MockRequestDispatcher: forwarding to [index]
+02:46:56.433 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
