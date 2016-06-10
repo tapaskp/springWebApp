@@ -52,3 +52,15 @@ tasks.withType(Test) {
     reports.html.destination = file("${reporting.baseDir}/${name}")
 }
 
+uploadArchives {
+    repositories {
+       mavenDeployer {
+             repository(url: "http://localhost:8081/nexus/content/repositories/snapshots") {
+             authentication(userName: "admin", password: "admin123")
+}
+             pom.version = "1.0-SNAPSHOT"
+             pom.artifactId = "springboot"
+             pom.groupId = "net.petrikainulainen.gradle"
+       }
+    }
+}
